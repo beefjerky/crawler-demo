@@ -12,4 +12,5 @@ easy_install StringIO<br>
 
 3. 环境<br>
 python2, 最好是python2.7环境<br>
+linux 最好用CentOS<br>
 把page.py和crawler.py放到同一目录，然后执行python crawler.py<br>
