@@ -76,7 +76,8 @@ if __name__ == '__main__':
         ts = int(time.time() * 1000)
         url = 'http://202.112.150.126/indexc.php?client=sysu&isbn=%s&callback=aa&t=%d' % (quote_safe(res['ISBN']), ts)
         text = get_page(url)
-        catlog = parse_catlog(text)
-        if catlog not in ['', None]:
-            res[u'图书目录'] = catlog 
+        if text != None:
+            catlog = parse_catlog(text)
+            if catlog not in ['', None]:
+                res[u'图书目录'] = catlog
     print res
