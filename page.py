@@ -4,6 +4,7 @@ import gzip
 from StringIO import StringIO
 from urllib import quote_plus
 
+
 def decode_safe(s):
     if type(s) == unicode: return s
     try: return s.decode('gbk')
