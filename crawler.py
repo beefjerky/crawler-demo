@@ -69,6 +69,7 @@ if __name__ == '__main__':
         print 'No result for %s' % search_wd
         sys.exit()
     print 'top one search result url: ', url
+    
     #step 2: 获取第一个结果的表格数据
     text = get_page(url)
     res = parse_no_catlog(text)
